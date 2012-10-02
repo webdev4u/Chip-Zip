@@ -1,0 +1,260 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bas",
+				"base_title"
+			],
+			[
+				"con",
+				"contact"
+			],
+			[
+				"pa",
+				"pages"
+			],
+			[
+				"la",
+				"label"
+			],
+			[
+				"i",
+				"input"
+			],
+			[
+				"incl",
+				"include_all_fields"
+			],
+			[
+				"page",
+				"page_name"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"si",
+				"sign_in"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"link",
+				"link_to"
+			],
+			[
+				"Tra",
+				"Translation"
+			],
+			[
+				"loc",
+				"localized"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 54.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/vano/www/ror/sample_app/app/assets/images/logo.png",
+		"/home/vano/www/ror/sample_app/Gemfile.lock",
+		"/home/vano/.autotes",
+		"/home/vano/www/ror/sample_app/README.rdoc",
+		"/home/vano/www/ror/chip-zip/app/assets/stylesheets/application.css.scss",
+		"/home/vano/www/ror/chip-zip/app/assets/stylesheets/application.css",
+		"/home/vano/www/ror/chip-zip/app/admin/dashboards.rb",
+		"/home/vano/www/ror/chip-zip/app/admin/users.rb",
+		"/home/vano/www/ror/chip-zip/config/initializers/rails_admin.rb",
+		"/home/vano/www/ror/chip-zip/db/migrate/20120822144333_add_menu_order_to_pages.rb",
+		"/home/vano/www/ror/chip-zip/app/views/pages/contacts.html.erb",
+		"/home/vano/www/ror/chip-zip/app/views/pages/about.html.erb",
+		"/home/vano/www/ror/chip-zip/app/controllers/pages_controller.rb",
+		"/home/vano/www/ror/chip-zip/app/views/pages/show.html.erb",
+		"/home/vano/www/ror/chip-zip/app/helpers/pages_helper.rb",
+		"/home/vano/www/ror/chip-zip/app/helpers/application_helper.rb",
+		"/home/vano/www/ror/chip-zip/app/controllers/page_controller.rb",
+		"/home/vano/www/ror/chip-zip/db/migrate/20120821135006_create_pages.rb",
+		"/home/vano/www/ror/chip-zip/public/index.html",
+		"/home/vano/www/ror/chip-zip/config/database.yml",
+		"/home/vano/www/ror/translation/config/locales/en.yml",
+		"/home/vano/www/ror/translation/config/locales/ru/routes.yml",
+		"/home/vano/www/ror/translation/config/locales/ro/routes.yml",
+		"/home/vano/www/ror/translation/config/locales/en/routes.yml",
+		"/home/vano/www/ror/translation/config/routes.yml",
+		"/home/vano/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/vano/.config/sublime-text-2/Packages/User/Distraction Free.sublime-settings",
+		"/home/vano/.config/sublime-text-2/Packages/User/YAML.sublime-settings",
+		"/home/vano/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/vano/www/ror/translation/config/locales/routes.yml",
+		"/home/vano/www/ror/translation/config/application.rb",
+		"/home/vano/www/ror/translation/app/views/homes/show.html.erb",
+		"/home/vano/www/ror/translation/config/database.yml",
+		"/home/vano/www/ror/rcdr/Gemfile",
+		"/home/vano/Documents/Aptana Studio 3 Workspace/rcdr/Gemfile",
+		"/home/vano/Documents/Aptana Studio 3 Workspace/rcdr/app/controllers/home_controller.rb",
+		"/home/vano/Documents/Aptana Studio 3 Workspace/rcdr/config/routes.rb",
+		"/home/vano/Documents/Aptana Studio 3 Workspace/rcdr/config/locales/ru.yml",
+		"/home/vano/Documents/Aptana Studio 3 Workspace/rcdr/app/views/layouts/application.html.erb",
+		"/home/vano/Documents/Aptana Studio 3 Workspace/rcdr/app/controllers/application_controller.rb",
+		"/home/vano/Documents/Aptana Studio 3 Workspace/rcdr/config/boot.rb"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"base_title",
+			"home",
+			"username",
+			" config.model Page do\n    include_all_fields\n    configure :menu_order, :integer\n    list do\n      sort_by :menu_order\n    end\n    field :content, :text do\n      ckeditor true\n    end\n  end",
+			"homes",
+			"username",
+			"username_field",
+			"username",
+			"email",
+			".\n",
+			"root",
+			"right",
+			"ro:\n  homes: principala\n  index: principala\n  contacts: contacte\n  about: despre noi\nru:\n  homes: главная\n  index: главная\n  contacts: контакты\n  about: о нас\nen:\n  homes: home\n  index: index\n  contacts: contacts\n  about: about",
+			"homes",
+			"# resources :homes",
+			"class",
+			"</",
+			"link_to",
+			"resources"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 293.0,
+	"status_bar_visible": true
+}
