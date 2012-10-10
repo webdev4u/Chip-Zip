@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Parent:</b>
+  <%= @page.parent_id %>
+</p>
+
+<p>
+  <b>Путь:</b>
+  <%= @page.link %>
+</p>
+
+<p>
+  <b>Название:</b>
+  <%= @page.title %>
+</p>
+
+<p>
+  <b>Содержимое:</b>
+  <%= @page.content.html_safe %>
+</p>
+
+
+<p>
+  <%= link_to(edit_page_path, :class => "btn btn-primary") do %>
+    Редактировать <i class="icon-edit icon-white"></i>
+  <% end %>
+
+  <%= link_to(pages_path, :class => "btn btn-primary") do %>
+    <i class="icon-arrow-left icon-white"></i> Назад
+  <% end %>
+</p>

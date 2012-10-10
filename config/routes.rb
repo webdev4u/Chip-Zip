@@ -1,5 +1,26 @@
 ChipZip::Application.routes.draw do
+  get "views/index"
+
+  get "views/view"
+
+  mount Ckeditor::Engine => '/ckeditor'
+
+  # get "pages/index"
+
+  # get "pages/manage"
+
   resources :categories
+
+  resources :pages do
+    collection do
+      get :manage
+      post :rebuild
+    end
+  end
+
+  get 'views/:page' => 'views#view', :as => :page
+
+  root :to => 'views#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

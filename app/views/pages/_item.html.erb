@@ -1,0 +1,8 @@
+<% @set.shift %>
+<li><%= link_to item.title, '/views/' + item.link %>
+<% unless item.leaf? %>
+	<ul>
+	  <%= render :partial => 'item', :collection => @set.select{|i| i.parent_id == item.id} %>
+	</ul>
+<% end %>
+</li>

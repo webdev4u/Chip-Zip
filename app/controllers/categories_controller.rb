@@ -2,26 +2,9 @@ class CategoriesController < ApplicationController
   # GET /categories
   # GET /categories.json
   def index
-    @categories = Category.find(:all, :order => "menu_order")
-    @parents = Category.all
-    # @categories_prepared = Array.new
+    @categories = Category.find(:all, :order => "parent ASC, menu_order ASC")
 
-    # i = 0
-    # @categories.each do |category|
-    #   @categories_prepared[i]['id'] = category.id
-    #   @categories_prepared[i]['link'] = category.link
-    #   @categories_prepared[i]['name'] = category.name
-    #   @categories_prepared[i]['order'] = category.order
-
-    #   @parents.each do |parent|
-    #     if category.parent == parent.id
-    #       categories_prepared[i]['parent_name'] = parent.name
-    #     else
-    #       categories_prepared[i]['parent_name'] = ''
-    #     end
-    #   end
-    #   i += 1
-    # end
+    @categoriesHash = Category.parents_hash(@categories)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -43,6 +26,7 @@ class CategoriesController < ApplicationController
   # GET /categories/new
   # GET /categories/new.json
   def new
+    @parents = Category.all
     @category = Category.new
 
     respond_to do |format|
@@ -54,6 +38,7 @@ class CategoriesController < ApplicationController
   # GET /categories/1/edit
   def edit
     @category = Category.find(params[:id])
+    @parents = Category.all
   end
 
   # POST /categories

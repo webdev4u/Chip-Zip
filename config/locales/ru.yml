@@ -1,0 +1,28 @@
+# Sample localization file for Russian. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+ru:
+  hello: "Hello world"
+
+  pages:
+    sortable:
+        base:
+          new:
+            create: Создать
+          controls:
+            edit_this: Редактировать
+            delete: Удалить
+            delete_confirm: Вы действительно хотите удалить?
+            cant_be_deleted: Не может быть удален. Есть дочерние элементы
+            delete_nested_elements: Удалить все дочерние элементы
+
+    sortable_issue_11:
+        base:
+          new:
+            create: Создать
+          controls:
+            edit_this: Редактировать
+            delete: Удалить
+            delete_confirm: Вы действительно хотите удалить?
+            cant_be_deleted: Не может быть удален. Есть дочерние элементы
+            delete_nested_elements: Удалить все дочерние элементы

@@ -1,0 +1,11 @@
+<h1>Редактирование страницы</h1>
+
+<%= render 'form' %>
+
+<%= link_to(@page, :class => 'btn btn-mini') do %>
+  Просмотр <i class="icon-eye-open"></i>
+<% end %>
+
+<%= link_to(pages_path, :class => 'btn btn-mini') do %>
+  <i class="icon-arrow-left"> Назад</i>
+<% end %>
