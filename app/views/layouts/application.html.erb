@@ -19,8 +19,14 @@
       <a class="brand" href="/">Chip-Zip</a>
       <div class="nav-collapse">
         <ul class="nav">
-          <!-- <li><%= link_to "ооо", categories_path %></li> -->
-          
+          <% if admin_signed_in? %>
+            <li><%= link_to "Редактирование страниц", manage_pages_path %></li>
+            <li>
+              <%= link_to(destroy_admin_session_path, :method => :delete) do %>
+                <i class="icon-off icon-white"></i> Выход 
+              <% end %>
+            </li>
+          <% end %>
         </ul>
       </div>
     </div>
@@ -30,9 +36,15 @@
 <div class="container">
   <div class="row">
     <div class="span2">
+      <% if params[:controller] == 'views' %>
       <%= render :partial => "tree" %>
+      <% end %>
     </div>
     <div class="span10">
+      <p class="notice"><%= notice %></p>
+      <% if !alert.nil? %>
+        <p class="alert"><%= alert %></p>
+      <% end %>
       <%= yield %>
     </div>
   </div>

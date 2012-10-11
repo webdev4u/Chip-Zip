@@ -1,5 +1,6 @@
 # encoding: UTF-8
 class PagesController < ApplicationController
+  before_filter :authenticate_admin!
 	include TheSortableTreeController::Rebuild
 
   def index
