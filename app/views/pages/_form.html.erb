@@ -11,10 +11,14 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label 'Родитель' %><br />
-    <%= select_tag 'page[parent_id]', options_for_select(nested_set_options(Page) {|i| "#{'-' * i.level} #{i.title}" }, @page.parent_id ) %>
-  </div>
+  <% if @page.id == 1 %>
+
+  <% else %>
+    <div class="field">
+      <%= f.label 'Родитель' %><br />
+      <%= select_tag 'page[parent_id]', options_for_select(nested_set_options(Page) {|i| "#{'-' * i.level} #{i.title}" }, @page.parent_id ) %>
+    </div>
+  <% end %>
   
   <div class="field">
     <%= f.label 'Путь' %><br />

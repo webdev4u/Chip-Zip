@@ -62,4 +62,14 @@ class PagesController < ApplicationController
       end
     end
   end
+
+  def destroy
+    @page = Page.find(params[:id])
+    @page.destroy
+
+    respond_to do |format|
+      format.html { redirect_to manage_pages_url }
+      format.json { head :no_content }
+    end
+  end
 end

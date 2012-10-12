@@ -5,15 +5,9 @@ ChipZip::Application.routes.draw do
 
   resources :adm
 
-  get "views/index"
-
-  get "views/view"
-
   mount Ckeditor::Engine => '/ckeditor'
 
-  # get "pages/index"
-
-  # get "pages/manage"
+  get "pages/manage"
 
   resources :categories
 
@@ -24,7 +18,7 @@ ChipZip::Application.routes.draw do
     end
   end
 
-  get 'views/:page' => 'views#view', :as => :page
+  get 'views/:page_link' => 'views#view', :as => :page_link
 
   root :to => 'views#index'
 

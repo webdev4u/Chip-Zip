@@ -5,8 +5,8 @@ class ViewsController < ApplicationController
   end
 
   def view
-    params[:page] ||= 'main'
-    pages = Page.where(:pages => {:link => params[:page]})
+    params[:page_link] ||= 'main'
+    pages = Page.where(:pages => {:link => params[:page_link]})
     @page = pages[0]
   end
 end
