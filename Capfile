@@ -6,7 +6,7 @@ set :rvm_ruby_string, '1.9.3'        # Or whatever env you want it to run in.
 #  'PATH' => "$PATH:$HOME/.rvm/bin"
 # }
 # default_run_options[:shell] = 'bash'
-
+set :rvm_type, :user
 require 'capistrano-deploy'
 use_recipes :git, :rails, :bundle, :unicorn
 
