@@ -7,7 +7,7 @@ set :rvm_ruby_string, '1.9.3-head'        # Or whatever env you want it to run i
 # }
 default_run_options[:shell] = 'bash'
 set :default_environment, {
-    'PATH' => "$PATH:/home/chip-zip/.rvm/gems/ruby-1.9.3-head/bin",
+    'PATH' => "$PATH:$HOME/.rvm/bin:/home/chip-zip/.rvm/gems/ruby-1.9.3-head/bin",
     'GEM_HOME' => '/home/chip-zip/.rvm/gems/ruby-1.9.3-head/',
     'GEM_PATH' => '/home/chip-zip/.rvm/gems/ruby-1.9.3-head/',
     'BUNDLE_PATH' => '/home/chip-zip/.rvm/gems/ruby-1.9.3-head/gems/'  
