@@ -37,8 +37,13 @@ end
 
 gem 'jquery-rails'
 
+group :production do
+  gem 'unicorn', '~> 3.6.2', :require => nil
+end
+
 group :development do
   gem 'rspec-rails'
+  gem 'capistrano-deploy', '~> 0.1.1', :require => nil
 end
 
 group :test do
