@@ -2,10 +2,10 @@
 # require "rvm/capistrano"                  # Load RVM's capistrano plugin.
 set :rvm_ruby_string, '1.9.3-head'        # Or whatever env you want it to run in.
 
-# set :default_environment, {
-#  'PATH' => "$PATH:$HOME/.rvm/bin"
-# }
-default_run_options[:shell] = 'bash'
+set :default_environment, {
+ 'PATH' => "$PATH:/home/chip-zip/.rvm/gems/ruby-1.9.3-head/bin"
+}
+# default_run_options[:shell] = 'bash'
 # set :default_environment, {
 #     'PATH' => "/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/home/chip-zip/.rvm/gems/ruby-1.9.3-head/bin",
 #     'GEM_HOME' => '/home/chip-zip/.rvm/gems/ruby-1.9.3-head/',
@@ -13,7 +13,6 @@ default_run_options[:shell] = 'bash'
 #     'BUNDLE_PATH' => '/home/chip-zip/.rvm/gems/ruby-1.9.3-head/gems/'  
 # }
 
-job_type :rake, "cd :path && PATH=/home/chip-zip/.rvm/gems/ruby-1.9.3-head/bin:$PATH RAILS_ENV=:environment bundle exec rake :task :output"
 require 'capistrano-deploy'
 use_recipes :git, :rails, :bundle, :unicorn
 
