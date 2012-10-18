@@ -2,9 +2,9 @@
 # require "rvm/capistrano"                  # Load RVM's capistrano plugin.
 set :rvm_ruby_string, '1.9.3'        # Or whatever env you want it to run in.
 
-# set :default_environment, {
-#  'PATH' => "$PATH:$HOME/.rvm/bin"
-# }
+set :default_environment, {
+ 'PATH' => "$PATH:$HOME/.rvm/bin"
+}
 default_run_options[:shell] = 'bash'
 
 require 'capistrano-deploy'
