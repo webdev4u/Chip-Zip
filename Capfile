@@ -1,17 +1,17 @@
 # $:.unshift(File.expand_path('./lib', ENV['rvm_path'])) # Add RVM's lib directory to the load path.
 # require "rvm/capistrano"                  # Load RVM's capistrano plugin.
-set :rvm_ruby_string, '1.9.3'        # Or whatever env you want it to run in.
+set :rvm_ruby_string, '1.9.3-head'        # Or whatever env you want it to run in.
 
 # set :default_environment, {
 #  'PATH' => "$PATH:$HOME/.rvm/bin"
 # }
 # default_run_options[:shell] = 'bash'
-set :default_environment, {
-    'PATH' => "/usr/local/bin:/bin:/usr/bin:/bin:/home/chip-zip/.rvm/bin",
-    'GEM_HOME' => '/home/chip-zip/.rvm/gems/ruby-1.9.3-head/',
-    'GEM_PATH' => '/home/chip-zip/.rvm/gems/ruby-1.9.3-head/',
-    'BUNDLE_PATH' => '/home/chip-zip/.rvm/gems/ruby-1.9.3-head/gems/'  
-}
+# set :default_environment, {
+#     'PATH' => "/usr/local/bin:/bin:/usr/bin:/bin:/home/chip-zip/.rvm/bin",
+#     'GEM_HOME' => '/home/chip-zip/.rvm/gems/ruby-1.9.3-head/',
+#     'GEM_PATH' => '/home/chip-zip/.rvm/gems/ruby-1.9.3-head/',
+#     'BUNDLE_PATH' => '/home/chip-zip/.rvm/gems/ruby-1.9.3-head/gems/'  
+# }
 
 require 'capistrano-deploy'
 use_recipes :git, :rails, :bundle, :unicorn
