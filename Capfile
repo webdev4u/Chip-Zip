@@ -8,8 +8,8 @@ set :rvm_ruby_string, '1.9.3'        # Or whatever env you want it to run in.
 # default_run_options[:shell] = 'bash'
 set :default_environment, {
     'PATH' => "/usr/local/bin:/bin:/usr/bin:/bin:/home/chip-zip/.rvm/bin",
-    'GEM_HOME' => '/home/chip-zip/.rvm/gems/ruby-1.9.3-head',
-    'GEM_PATH' => '/home/chip-zip/.rvm/gems/ruby-1.9.3-head',
+    'GEM_HOME' => '/home/chip-zip/.rvm/gems/ruby-1.9.3-head/',
+    'GEM_PATH' => '/home/chip-zip/.rvm/gems/ruby-1.9.3-head/',
     'BUNDLE_PATH' => '/home/chip-zip/.rvm/gems/ruby-1.9.3-head/gems/'  
 }
 
@@ -27,7 +27,3 @@ set :branch, "master"
 
 after 'deploy:update',  'bundle:install'
 after 'deploy:restart', 'unicorn:stop'
-
-task :install_bundler, :roles => :app do
-    run "type -P bundle &>/dev/null || { gem install bundler --no-rdoc --no-ri; }"
-end
