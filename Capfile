@@ -13,9 +13,7 @@ default_run_options[:shell] = 'bash'
 #     'BUNDLE_PATH' => '/home/chip-zip/.rvm/gems/ruby-1.9.3-head/gems/'  
 # }
 
-set :default_environment, {
-    'PATH' => "/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/home/chip-zip/.rvm/gems/ruby-1.9.3-head/bin"
-}
+job_type :rake, "cd :path && PATH=/home/chip-zip/.rvm/gems/ruby-1.9.3-head/bin:$PATH RAILS_ENV=:environment bundle exec rake :task :output"
 require 'capistrano-deploy'
 use_recipes :git, :rails, :bundle, :unicorn
 
