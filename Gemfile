@@ -15,7 +15,7 @@ gem 'awesome_nested_set'
 
 gem 'the_sortable_tree', '>= 1.9.4'
 
-gem "ckeditor", "3.7.1"
+gem "ckeditor", "3.7.2"
 gem 'carrierwave'
 gem 'mini_magick'
 
